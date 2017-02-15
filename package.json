@@ -1,6 +1,6 @@
 {
   "name": "vindec-nhtsa",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A VDS Decoding Plugin for vindec VIN Decoder",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,7 @@
   "homepage": "https://github.com/thephilip/vindec-nhtsa",
   "bugs": "https://github.com/thephilip/vindec-nhtsa/issues",
   "license": "MIT",
-  "dependencies": {"vindec": "2.1^" }
+  "dependencies": {
+    "vindec": "2.1^"
+  }
 }
