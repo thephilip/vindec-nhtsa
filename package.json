@@ -1,0 +1,24 @@
+{
+  "name": "vindec-nhtsa",
+  "version": "1.0.0",
+  "description": "A VDS Decoding Plugin for vindec VIN Decoder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Philip Smith",
+    "email": "thephilipsmith+npm@gmail.com"
+  },
+  "keywords": [
+    "vin",
+    "vds",
+    "vehicle",
+    "model",
+    "decode"
+  ],
+  "homepage": "https://github.com/thephilip/vindec-vds",
+  "bugs": "https://github.com/thephilip/vindec-vds/issues",
+  "license": "MIT",
+  "dependencies": {}
+}
