@@ -15,7 +15,7 @@ const vindec = require('vindec');
 const nhtsa = require('vindec-nhtsa')(vindec);
 
 // decode and validate
-let vin = nhtsa.decode('WDDHF5KB6FB102113', (error, data) => {
+let vin = nhtsa.decode('12345678901234567', (error, data) => {
 	if (error) {
 		console.log('Error: ', err.message);
 	}
