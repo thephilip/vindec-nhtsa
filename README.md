@@ -1,5 +1,5 @@
 # vindec-nhtsa
-###### A Vindec Plugin
+A Vindec plugin that returns a vin object with a property called fetch that is a pending Promise that, when settled, fetches the NHTSA data from a vehicle's manufacture year and VIN.
 
 ## Install via npm (or yarn)
 [![NPM](https://nodei.co/npm/vindec-nhtsa.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vindec-nhtsa)
