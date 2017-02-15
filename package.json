@@ -24,5 +24,5 @@
   "homepage": "https://github.com/thephilip/vindec-nhtsa",
   "bugs": "https://github.com/thephilip/vindec-nhtsa/issues",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {"vindec"}
 }
