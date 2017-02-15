@@ -6,7 +6,8 @@
 
 ## Returns original, vindec object (mutated)
 When the decode method is called on a VIN, it returns the standard vindec decoded object, but
-it also includes the URL of the API and the response data.  This is a work in progress.
+it also includes the URL of the API and the response data.  I may still sanitize some of the
+data returned, but I may leave it as-is.  Any suggestions are greatly appreciated.
 
 ```javascript
 // create and mutate 
