@@ -1,8 +1,8 @@
 # vindec-nhtsa
 ###### A Vindec Plugin
 
-## Install via npm or yarn
-    $ npm install vindec-nhtsa
+## Install via npm (or yarn)
+[![NPM](https://nodei.co/npm/vindec-nhtsa.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vindec-nhtsa)
 
 ## Returns original, vindec object (mutated)
 When the decode method is called on a VIN, it returns the standard vindec decoded object, but
