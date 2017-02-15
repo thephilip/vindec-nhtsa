@@ -1,6 +1,6 @@
 {
   "name": "vindec-nhtsa",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A VDS Decoding Plugin for vindec VIN Decoder",
   "main": "index.js",
   "scripts": {
