@@ -30,18 +30,19 @@ let getImages = (vin) => {
 }
 
 module.exports = (app) => {
-	if (!typeof app === 'object' && !typeof app.decode === 'function') {
-		return Error('Invalid instance of Vindec passed.');
+	if (typeof app !== 'undefined' || typeof app !== 'object' || typeof app.decode !== 'function') {
+		console.log('app: ', app);
+		return new Error('Vindec object not passed or invalid argument.');
 	}
 
 	let oldDecode = app.decode;
+	let vindecated = oldDecode(vin, (error, result) => {
+		if (error) {
+			console.log('Warning: vindec encountered error.\n\n', error.message);
+		}
+	});
+
 	app.decode = (vin) => {
-		let vindecated = oldDecode(vin, (error, result) => {
-			if (error) {
-				console.log('DecodeError: ', error.message);
-				return { vin: result.vin, valid: result.valid }
-			}
-		});
 		let decodeExtended = '/vehicles/DecodeVinValuesExtended/';
 		let params = vindecated.vin + '?format=json&modelyear=' + vindecated.year;
 		let url = api + decodeExtended + params;
