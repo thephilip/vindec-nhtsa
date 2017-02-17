@@ -24,10 +24,9 @@ let vin = nhtsa.decode('12345678901234567', (error, data) => {
 
 // settle pending promise
 vin.fetch().then((data) => {
-	// response is JSON
-	vin.nhtsa = JSON.parse(data);
 	// fulfilled
-    console.log('data:\n', vin.nhtsa);
+	vin.nhtsa = JSON.parse(data);
+    console.log('--NHTSAResults:\n', vin.nhtsa.Results);
 }).catch((error) => {
 	// rejected
     console.log('Danger, Will Robinson! Error:\n', error);

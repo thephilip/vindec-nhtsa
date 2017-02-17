@@ -25,6 +25,6 @@
   "bugs": "https://github.com/thephilip/vindec-nhtsa/issues",
   "license": "MIT",
   "dependencies": {
-    "vindec": "2.1^"
+    "vindec": "^2.1.3"
   }
 }
