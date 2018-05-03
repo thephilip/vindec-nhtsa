@@ -1,3 +1,6 @@
+# NOTE: breaking changes were introduced while refactoring vindec.
+I am in the process of moving this repo's functionality to the original vindec repo and decoupling this plugin architecture.  Older versions of vindec (<=2.1.3) should still work.
+
 # vindec-nhtsa
 A Vindec plugin that returns a vin object with a property called fetch that is a pending Promise that, when settled, fetches the NHTSA data from a vehicle's manufacture year and VIN.
 
