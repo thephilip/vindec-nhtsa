@@ -1,3 +1,7 @@
+
+# DEPRECATION NOTICE
+This module is no longer under active development.
+
 # NOTE: breaking changes were introduced while refactoring vindec.
 I am in the process of moving this repo's functionality to the original vindec repo and decoupling this plugin architecture.  Older versions of vindec (<=2.1.3) should still work.
 
@@ -13,7 +17,7 @@ it also includes the URL of the API and the response data.  I may still sanitize
 data returned, but I may leave it as-is.  Any suggestions are greatly appreciated.
 
 ```javascript
-// create and mutate 
+// create and mutate
 const vindec = require('vindec');
 const nhtsa = require('vindec-nhtsa')(vindec);
 
@@ -34,4 +38,4 @@ vin.fetch().then((data) => {
 	// rejected
     console.log('Danger, Will Robinson! Error:\n', error);
 });
-``` 
+```
